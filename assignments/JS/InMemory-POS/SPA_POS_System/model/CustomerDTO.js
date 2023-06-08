@@ -18,17 +18,4 @@ function CustomerDTO(id,name,address,contact){
         return __contact;
     }
 
-    this.setID = function (id) {
-        __id=id;
-    }
-    this.setName = function (name) {
-        __name=name;
-    }
-
-    this.setAddress = function (address) {
-        __address=address;
-    }
-    this.setContact = function (contact) {
-        __contact=contact;
-    }
 }

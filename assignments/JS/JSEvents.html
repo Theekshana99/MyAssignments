@@ -16,7 +16,7 @@
 
 <script src="../../assest/Bootstrap/js/jquery-3.7.0.min.js"></script>
 <script>
-    let h2hashan = $("#hashan").text();
+    // let h2hashan = $("#hashan").text();
     let h1Content = $("#h1").text();
     let count=0;
 
@@ -68,6 +68,26 @@
     $("#h1").off("click",function (){
 
     });
+
+    let x=10;
+    let y=50;
+
+    let student= {
+        name: "Hashan",
+        age: 23,
+        inARelationship: true,
+        printDetails : function (){
+            console.log(`My name is : ${this.name}`);
+            console.log(`My age is : ${this.age}`);
+            console.log(`Am I in a relationship ? ${this.inARelationship}`);
+        },
+        printDetails : function (x,y){
+            // console.log(x);
+            console.log(arguments);
+        }
+    }
+    // student.printDetails();
+    student.printDetails(x,y);
 </script>
 </body>
 </html>

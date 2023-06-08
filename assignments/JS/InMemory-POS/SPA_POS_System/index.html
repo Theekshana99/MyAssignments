@@ -9,20 +9,22 @@
     <link href="assets/boostrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/fonts/css/all.min.css" rel="stylesheet">
     <style>
-        .nav-item{
+        .nav-item {
             font-weight: bold;
             font-size: 20px;
         }
 
-        body>nav>div>a{
+        body > nav > div > a {
             color: yellow !important;
         }
-        .navbar-brand{
+
+        .navbar-brand {
             font-weight: bold;
             font-size: 30px;
             font-family: 'Lobster', cursive;
         }
-        .container-fluid{
+
+        .container-fluid {
             padding-left: 0;
             padding-right: 0;
         }
@@ -30,94 +32,96 @@
 </head>
 <body>
 <!--Navigation Start-->
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Hashan POS SYSTEM</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" id="linkHome" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="linkOrder" href="#" >Orders</a>
+<nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hashan POS SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="linkHome" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="linkOrder" href="#">Orders</a>
 
-                    <li class="nav-item">
-                        <a class="nav-link " id="linkItem" href="#" >Items</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " id="linkCustomer" href="#" >Customers</a>
-                    </li>
-                </ul>
+                <li class="nav-item">
+                    <a class="nav-link " id="linkItem" href="#">Items</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="linkCustomer" href="#">Customers</a>
+                </li>
+            </ul>
 
-            </div>
         </div>
-    </nav>
+    </div>
+</nav>
 <!--Navigation End-->
 
 <!--Dashboard Content Start-->
-    <section class="container-fluid " id="dashForm">
-        <div class="has-bg-img ">
-            <img class="bg-img position-relative " src="assets/images/food.webp" alt="..." style="width: 100% ;height: 97vh ">
-        </div>
-    </section>
+<section class="container-fluid " id="dashForm">
+    <div class="has-bg-img ">
+        <img class="bg-img position-relative " src="assets/images/food.webp" alt="..."
+             style="width: 100% ;height: 97vh ">
+    </div>
+</section>
 <!--Dashboard Content End-->
 <!--Customer Content start-->
-        <section class="container-fluid mt-3 " id="customerForm">
+<section class="container-fluid mt-3 " id="customerForm">
 
-            <section class="row mt-3 justify-content-around">
-                <div class="col-12 col-md-4">
-                    <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2 bg-warning">
-                        <h1 class="h1 mb-3">Manage Customer</h1>
-                        <div class="mb-3">
-                            <label class="form-label" for="srcCusID">Search Customer</label>
-                            <input class="form-control" id="srcCusID" placeholder="Customer ID" type="text"><br>
-                            <button type="button" class="btn btn-success" id="searchCustomer">Search</button>
-                        </div>
-                        <button type="button" class="btn btn-success" id="addCustomer">Add</button>
-                        <button type="button" class="btn btn-danger" id="deleteCustomer">Delete</button>
-                        <button type="button" class="btn btn-secondary" id="updateCustomer">Update</button>
-                    </div>
+    <section class="row mt-3 justify-content-around">
+        <div class="col-12 col-md-4">
+            <div class="shadow-sm pt-3 pb-5 px-3 py-3 mt-2 bg-warning">
+                <h1 class="h1 mb-3">Manage Customer</h1>
+                <div class="mb-3">
+                    <label class="form-label" for="srcCusID">Search Customer</label>
+                    <input class="form-control" id="srcCusID" placeholder="Customer ID" type="text"><br>
+                    <button type="button" class="btn btn-success" id="searchCustomer">Search</button>
                 </div>
-                <div class="col-12 col-md-5">
-                    <div class="mb-3">
-                        <label class="form-label " for="cusID"  id="lblCusId">Customer ID</label>
-                        <input class="form-control " id="cusID" placeholder="Customer ID" type="text">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="cusName" id="lblcusname">Customer Name</label>
-                        <input class="form-control" id="cusName" placeholder="Customer Name" type="text">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="cusAddress" id="lblcusAddress">Customer Address</label>
-                        <input class="form-control" id="cusAddress" placeholder="Customer Address" type="text">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label" for="contact" id="lblcusContact">Contact</label>
-                        <input class="form-control" id="contact" placeholder="Customer Tp" type="text">
-                    </div>
-                </div>
-            </section>
-            <section class="row mt-4">
-                <div class="col">
-                    <table class="table table-hover" >
-                        <thead class="bg-dark text-white">
-                        <tr>
-                            <th>CustomerID</th>
-                            <th>CustomerName</th>
-                            <th>CustomerAddress</th>
-                            <th>Contact</th>
-                        </tr>
-                        </thead>
-                        <tbody id="customerTable">
+                <button type="button" class="btn btn-success" id="addCustomer">Add</button>
+                <button type="button" class="btn btn-danger" id="deleteCustomer">Delete</button>
+                <button type="button" class="btn btn-secondary" id="updateCustomer">Update</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-5">
+            <div class="mb-3">
+                <label class="form-label " for="cusID" id="lblCusId">Customer ID</label>
+                <input class="form-control " id="cusID" placeholder="Customer ID" type="text">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cusName" id="lblcusname">Customer Name</label>
+                <input class="form-control" id="cusName" placeholder="Customer Name" type="text">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="cusAddress" id="lblcusAddress">Customer Address</label>
+                <input class="form-control" id="cusAddress" placeholder="Customer Address" type="text">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="contact" id="lblcusContact">Contact</label>
+                <input class="form-control" id="contact" placeholder="Customer Tp" type="text">
+            </div>
+        </div>
+    </section>
+    <section class="row mt-4">
+        <div class="col">
+            <table class="table table-hover">
+                <thead class="bg-dark text-white">
+                <tr>
+                    <th>CustomerID</th>
+                    <th>CustomerName</th>
+                    <th>CustomerAddress</th>
+                    <th>Contact</th>
+                </tr>
+                </thead>
+                <tbody id="customerTable">
 
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-        </section>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
 <!--customer Content End-->
 
 
@@ -219,7 +223,7 @@
                             <div class="row form-group m-0">
                                 <div class="col-12">
                                     <span class="h1  text-danger" id="total-text ">Total  :  Rs. </span>
-                                    <span class="h1  text-danger"  id="txtTotal"> 0.00</span>
+                                    <span class="h1  text-danger" id="txtTotal"> 0.00</span>
                                 </div>
                             </div>
                         </form>
@@ -245,19 +249,22 @@
                             <div class="row form-group mt-3">
                                 <label for="txtOrderCustName" class="col-sm-3 col-form-label">Name</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderCustName" placeholder="Customer Name" type="text" class="form-control form-control">
+                                    <input id="txtOrderCustName" placeholder="Customer Name" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                             <div class="row form-group mt-3">
                                 <label for="txtOrderCustAddress" class="col-sm-3 col-form-label">Address</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderCustAddress" placeholder="Customer Address" type="text" class="form-control form-control">
+                                    <input id="txtOrderCustAddress" placeholder="Customer Address" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                             <div class="row form-group mt-3">
                                 <label for="txtOrderCustContact" class="col-sm-3 col-form-label">Salary</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderCustContact" placeholder="Customer Salary" type="text" class="form-control form-control">
+                                    <input id="txtOrderCustContact" placeholder="Customer Salary" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                         </form>
@@ -280,19 +287,22 @@
                             <div class="row form-group mt-3">
                                 <label for="txtOrderItemName" class="col-sm-3 col-form-label">Name</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderItemName" placeholder="Item Name" type="text" class="form-control form-control">
+                                    <input id="txtOrderItemName" placeholder="Item Name" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                             <div class="row form-group mt-3">
                                 <label for="txtOrderItemPrice" class="col-sm-3 col-form-label">Price</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderItemPrice" placeholder="Item Price" type="text" class="form-control form-control">
+                                    <input id="txtOrderItemPrice" placeholder="Item Price" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                             <div class="row form-group mt-3">
                                 <label for="txtOrderItemQty" class="col-sm-3 col-form-label">Quantity On Hand</label>
                                 <div class="col-sm-9">
-                                    <input id="txtOrderItemQty" placeholder="Item Quantity" type="text" class="form-control form-control">
+                                    <input id="txtOrderItemQty" placeholder="Item Quantity" type="text"
+                                           class="form-control form-control">
                                 </div>
                             </div>
                         </form>
@@ -313,14 +323,17 @@
                                 <div class="row form-group mt-3">
                                     <label for="txtSubTotal" class="col-sm-4 col-form-label">Sub Total</label>
                                     <div class="col-sm-8">
-                                        <input id="txtSubTotal" placeholder="Sub Total" type="text" class="form-control">
+                                        <input id="txtSubTotal" placeholder="Sub Total" type="text"
+                                               class="form-control">
                                     </div>
                                 </div>
                                 <div class="col-5">
-                                    <button class="btn btn-success mt-3" id="btnAddToCart" type="button">Add Item</button>
+                                    <button class="btn btn-success mt-3" id="btnAddToCart" type="button">Add Item
+                                    </button>
                                 </div>
                                 <div class="col-5">
-                                    <button class="btn btn-success mt-3" id="btnPurchaseOrder" type="button">Purchase</button>
+                                    <button class="btn btn-success mt-3" id="btnPurchaseOrder" type="button">Purchase
+                                    </button>
                                 </div>
                             </div>
                         </section>
@@ -330,7 +343,7 @@
             </div>
         </div>
         <br>
-        <div  class="row">
+        <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
@@ -364,53 +377,107 @@
 <script src="controller/CustomerController.js"></script>
 <script src="model/CustomerDTO.js"></script>
 <script src="db/DB.js"></script>
-<script src="model/ItemDTO.js"></script>
-<script src="controller/ItemController.js"></script>
-<script src="controller/OrderController.js"></script>
-<script src="model/OrdersDTO.js"></script>
-<script src="model/OrderDetailsDTO.js"></script>
-<script src="model/OrderTM.js"></script>
 
 
 <script>
-//hide all content
-$("#dashForm").css("display","block");
-$("#customerForm").css("display","none");
-$("#itemForm").css("display","none");
-$("#orderForm").css("display","none");
+    //hide all content
+    $("#dashForm").css("display", "block");
+    $("#customerForm").css("display", "none");
+    $("#itemForm").css("display", "none");
+    $("#orderForm").css("display", "none");
 
 
-$("#linkCustomer").click(function (){
-$("#customerForm").css("display","block");
-$("#dashForm").css("display","none");
-$("#itemForm").css("display","none");
-$("#orderForm").css("display","none");
+    $("#linkCustomer").click(function () {
+        $("#customerForm").css("display", "block");
+        $("#dashForm").css("display", "none");
+        $("#itemForm").css("display", "none");
+        $("#orderForm").css("display", "none");
 
-});
+    });
 
-$("#linkItem").click(function (){
-$("#itemForm").css("display","block");
-$("#customerForm").css("display","none");
-$("#dashForm").css("display","none");
-$("#orderForm").css("display","none");
+    $("#linkItem").click(function () {
+        $("#itemForm").css("display", "block");
+        $("#customerForm").css("display", "none");
+        $("#dashForm").css("display", "none");
+        $("#orderForm").css("display", "none");
 
-});
+    });
 
 
-$("#linkHome").click(function (){
-$("#dashForm").css("display","block");
-$("#itemForm").css("display","none");
-$("#customerForm").css("display","none");
-$("#orderForm").css("display","none");
-});
+    $("#linkHome").click(function () {
+        $("#dashForm").css("display", "block");
+        $("#itemForm").css("display", "none");
+        $("#customerForm").css("display", "none");
+        $("#orderForm").css("display", "none");
+    });
 
-$("#linkOrder").click(function (){
-$("#orderForm").css("display","block");
-$("#dashForm").css("display","none");
-$("#itemForm").css("display","none");
-$("#customerForm").css("display","none");
+    $("#linkOrder").click(function () {
+        $("#orderForm").css("display", "block");
+        $("#dashForm").css("display", "none");
+        $("#itemForm").css("display", "none");
+        $("#customerForm").css("display", "none");
 
-});
+    });
+
+    // var customerDB = new Array();
+    //
+    // $("#customerTable").empty();
+    //
+    // let customerID = $("cusID").val;
+    // let customerName = $("cusName").val;
+    // let customerAddress = $("cusAddress").val;
+    // let Contact = $("contact").val;
+    //
+    // let customer = [customerID, customerName, customerAddress, Contact];
+    //
+    // customerDB.push(customer);
+    // for (let i = 0; i < customerDB.length; i++) {
+        // let id = customerDB [i][0];
+        // let name = customerDB [i][1];
+        // let address = customerDB [i][2];
+        // let contact = customerDB [i][3];
+
+        // let row = `<tr>
+        //     <td>${id}</td>
+        //     <td>${name}</td>
+        //     <td>${address}</td>
+        //     <td>${contact}</td>
+        // </tr>`;
+        //     $("#customerTable").append(row);
+        // }
+
+
+
+    $("#customerTable").empty();
+$("#addCustomer").click(function (){
+    let customerID = $("cusID").val;
+    let customerName = $("cusName").val;
+    let customerAddress = $("cusAddress").val;
+    let Contact = $("contact").val;
+
+    let customer = [customerID, customerName, customerAddress, Contact];
+
+    customerDB.push(customer);
+})
+
+    function loadAllCustomer() {
+        $("#customerTable").empty();
+        for (let i = 0; i < customerDB.length; i++) {
+            let customer= {
+                customerID : customerDB[i][0],
+                customerName : customerDB[i][1],
+                customerAddress : customerDB[i][2],
+                Contact : customerDB[i][3]
+            }
+
+            let row = `<tr><td>${customer.}</td><td>${customerName}</td><td>${customerAddress}</td><td>${Contact}</td></tr>`;
+
+            $("#customerTable").append(row);
+
+        }
+    }
+
+
 </script>
 
 

@@ -87,10 +87,7 @@
 </section>
 
 <script>
-
     let colors = ["deeppink","orange","red", "yellow", "green", "blue" ];
-
-
     setInterval(function (){
         let divArray=document.querySelector("section").children;
         for (let i = 0; i < divArray.length; i++) {
@@ -99,11 +96,6 @@
         let lv= colors.pop();
         colors.unshift(lv);
     },500);
-
-
-
-
-
 </script>
 </body>
 </html>

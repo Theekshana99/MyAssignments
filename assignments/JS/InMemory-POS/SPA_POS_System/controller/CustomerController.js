@@ -6,9 +6,7 @@ function loadAllCustomer() {
         let customerAddress = customerDB[i].getAddress();
         let Contact = customerDB[i].getContact();
 
-
-        let row = `<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${Contact}</td></tr>`;
-
+        let row =`<tr><td>${customerID}</td><td>${customerName}</td><td>${customerAddress}</td><td>${Contact}</td></tr>`;
         $("#customerTable").append(row);
     }
 }
