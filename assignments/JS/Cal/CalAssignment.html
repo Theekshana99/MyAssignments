@@ -69,6 +69,9 @@
             box-shadow: 0 2px rgba(244, 157, 178, 0.50);
             border-radius: 5px;
             cursor: pointer;
+            font-family: revert;
+            font-size: 20px;
+            text-align: center;
         }
 
         #btn0 {
@@ -237,7 +240,7 @@
 <section id="background"><img src="assets/images/CalBackground.jpg" id="backgroundimage">
     <section id="frame">
         <div id="textArea"><p id="text"></p></div>
-        <button id="btnC"><p id="c">c</p></button>
+        <button id="btnC">c</button>
         <button class="numbtn" id="btn0"><p class="numbers" id="0">0</p></button>
         <button class="numbtn" id="btn1"><p class="numbers" id="1">1</p></button>
         <button class="numbtn" id="btn2"><p class="numbers" id="2">2</p></button>
@@ -256,5 +259,150 @@
         <button class="marks" id="btnplus"><p class="m" id="plus">+</p></button>
     </section>
 </section>
+<script>
+    let x = 0;
+    let tot = 0;
+    let plus = 0;
+    document.getElementById("btn1").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 1;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 1;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn2").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 2;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 2;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn3").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 3;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 3;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn4").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 4;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 4;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn5").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 5;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 5;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn6").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 6;
+            document.getElementById("text").innerText = tot;
+        } else{
+            plus = plus * 10 + 6;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn7").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 7;
+            document.getElementById("text").innerText = tot;
+        }else {
+            plus = plus * 10 + 7;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn8").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 8;
+            document.getElementById("text").innerText = tot;
+        } else {
+            plus = plus * 10 + 8;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btn9").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10 + 9;
+            document.getElementById("text").innerText = tot;
+        } else {
+            plus = plus * 10 + 9;
+            document.getElementById("text").innerText = plus;
+        }
+
+    })
+
+    document.getElementById("btn0").addEventListener("click", function () {
+        if (x == 0) {
+            tot = tot * 10;
+            document.getElementById("text").innerText = tot;
+        } else {
+            plus = plus * 10;
+            document.getElementById("text").innerText = plus;
+        }
+    })
+
+    document.getElementById("btnC").addEventListener("click", function () {
+        x = 0;
+        plus = "";
+        tot = "";
+        document.getElementById("text").innerText = tot;
+    })
+
+    document.getElementById("btnplus").addEventListener("click", function () {
+        x = 1;
+    })
+
+    document.getElementById("btnequal").addEventListener("click", function () {
+        if (x == 1) {
+            tot = tot + plus;
+            document.getElementById("text").innerText = tot;
+        } else if (x == 2) {
+            tot = tot - plus;
+            document.getElementById("text").innerText = tot;
+        } else if (x == 3) {
+            tot = tot / plus;
+            document.getElementById("text").innerText = tot;
+        } else if (x == 4) {
+            tot = tot * plus;
+            document.getElementById("text").innerText = tot;
+        }
+        x = 0;
+        plus = 0;
+    })
+    document.getElementById("btnminer").addEventListener("click", function () {
+        x = 2;
+    })
+
+    document.getElementById("btndivide").addEventListener("click", function () {
+        x = 3;
+    })
+
+    document.getElementById("btnmultiply").addEventListener("click", function () {
+        x = 4;
+    })
+</script>
 </body>
 </html>
